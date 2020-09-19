@@ -7,17 +7,24 @@ The reason for that is that as you might have expected or already known, this is
 I believe it gives one a clearer vision/understanding of the tools used especially with Natural Language Processing.
 That there exists complex problems that still require a lot of work and cooperation between specialists from different fields in order to understand better(as will be shown below).
 
+## [My LinkedIn](https://linkedin.com/in/mohamed-ilyes-ltifi)
+
 Enjoy!
 
 [**Introduction**](#introduction)
+
 [**Tools already built**](#tools-already-built)
+
 [**Sources of inspiration**](#sources-of-inspiration)
+
 [**Datasets**](#datasets)
+
 [**Data analysis and cleaning**](#data-analysis-and-cleaning)
 - [**Analysis of Dataset 1**](#analysis-of-dataset-1)
 - [**Analysis of Dataset 2**](#analysis-of-dataset-2)
 
 [**Algorithms used**](#algorithms-used)
+
 [**Prediction results**](#prediction-results)
 - [**Results of Dataset 1**](#results-of-dataset-1)
 - [**Results of Dataset 2**](#results-of-dataset-2)
@@ -25,7 +32,7 @@ Enjoy!
 [**Conclusions**](#conclusions)
 
 
-### Introduction
+## Introduction
 Classifying news as real/fake is equally very important and very hard.
 - Take Elections for example(the first dataset is based on the 2016 American Presidential period). Very large numbers of news both fake and real hit the internet resulting in a wide spread of false information(thanks to social medias) in a very critical time for any country.
 Also as you might remember, the first 3 months of the internation Covid-19 situation saw many false information/theories which may had disastrous consequences.
@@ -44,41 +51,42 @@ And so, as the miguelmalvarez article(see Sources of inspiration) explains, Divi
 The thing that everyone agrees about is that Journalists must cooperate with AI experts to make real advancement in this matter.
 But for now, let's see how our regular algorithms perform !
 
-### Tools already built
+## Tools already built
 - [The Fake News Data Science challenge](http://www.fakenewschallenge.org)
 - [FullFact](https://fullfact.org/)
 - [Article about CrossCheck](https://firstdraftnews.org/latest/crosscheck-launches/)
 - [Article about Facebook's Fake News AI](https://techcrunch.com/2016/11/14/facebook-fake-news/)
 - [A web app with a model built inside to predict fake news(belongs to the guy that wrote the last article in Sources of inspiration)](http://real-fake-news-classifier.herokuapp.com/)
 
-### Sources of inspiration
+## Sources of inspiration
 - https://www.kaggle.com/ayushimishra2809/fake-news-prediction
 - https://miguelmalvarez.com/2017/03/23/how-can-machine-learning-and-ai-help-solving-the-fake-news-problem/
 - https://www.datacamp.com/community/tutorials/scikit-learn-fake-news
 - https://opendatascience.com/how-to-build-a-fake-news-classification-model/
 - https://towardsdatascience.com/building-and-deploying-end-to-end-fake-news-classifier-caebe45bd30
 
-### Datasets
+## Datasets
 1) https://www.kaggle.com/hassanamin/textdb3 : News articles from the 2016 American Presidential Campaign
 
 2) https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset : Already divided into real.csv and fake.csv
 
-### Data analysis and cleaning
+## Data analysis and cleaning
 ![Screenshot](screenshots/imports.png)
 
 All datasets will be converted to one single format, to ease the implementation.
 The format will contain 2 columns: 'text' + 'label'(REAL or FAKE)
 
-##### Analysis of Dataset 1:
+#### Analysis of Dataset 1:
 The 'title' will be appended to the 'text' and so the 'title' column will be dropped.
 It contains 6335 rows of news from the 2016 American Presidential period.
 ![Screenshot](screenshots/read_dataset_1.png)
 
 Analysis:
+
 ![Screenshot](screenshots/analysis_1_dataset_1.png)
 ![Screenshot](screenshots/analysis_2_dataset_1.png)
 
-##### Analysis of Dataset 2:
+#### Analysis of Dataset 2:
 Same thing with the 'title' column, and the 'subject' and 'date' columns will be dropped. Finally the fake.csv and real.csv will be merged and we'll add the 'label' column and fill it with FAKE or REAL.
 It is mostly US News from the end 2017, having 44898 rows ~= x7 the size of the first dataset.
 ![Screenshot](screenshots/read_dataset_2.png)
@@ -87,7 +95,7 @@ Analysis:
 ![Screenshot](screenshots/analysis_1_dataset_2.png)
 ![Screenshot](screenshots/analysis_2_dataset_2.png)
 
-### Algorithms used
+## Algorithms used
 
 Vectorizers:
 - Count Vectorizer
@@ -114,22 +122,22 @@ The execute_algorithm() function takes in a dataset, a vectorizer and an algorit
 Example:
 ![Screenshot](screenshots/execute_algorithm_example.png)
 
-### Prediction results
+## Prediction results
 We'll be picking the best 5 out of the 21 scores for each dataset.
 
-##### Results of Dataset 1:
+#### Results of Dataset 1:
 ![Screenshot](screenshots/results_dataset_1.png)
 
 Confusion matrix of the Passive Aggressive Classifer with the TfidfVectorizer:
 ![Screenshot](screenshots/confusion_matrix_best_dataset_1.png)
 
-##### Results of Dataset 2:
+#### Results of Dataset 2:
 ![Screenshot](screenshots/results_dataset_2.png)
 
 Confusion matrix of the Passive Aggressive Classifer with the TfidfVectorizer:
 ![Screenshot](screenshots/confusion_matrix_best_dataset_2.png)
 
-### Conclusions
+## Conclusions
 It seems that after getting 94% and 97% accuracy in the 2 datasets, that our work is done.
 But that's not really the case.
 There is a great write-up on StackOverflow with this incredibly useful function for finding vectors that most affect labels(meaning what words are most important to our models)
@@ -151,5 +159,3 @@ I have learned a lot about Natural Language Processing; what works best with it,
 But what I'm sure about is that more knowledge from other fields(journalists etc..) must be brought into this to shed more light on the obstacles and hopefully with more talk/competitions made on the subject, it will happen soon.
 
 Thank you for reading !
-
-## [My LinkedIn](https://linkedin.com/in/mohamed-ilyes-ltifi)
