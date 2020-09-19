@@ -11,9 +11,9 @@ That there exists complex problems that still require a lot of work and cooperat
 
 Enjoy!
 
-[**Introduction**](#introduction)
+[Introduction](#introduction)
 
-[**Tools already built**](#tools-already-built)
+[Tools already built](#tools-already-built)
 
 [**Sources of inspiration**](#sources-of-inspiration)
 
@@ -71,6 +71,7 @@ But for now, let's see how our regular algorithms perform !
 2) https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset : Already divided into real.csv and fake.csv
 
 ## Data analysis and cleaning
+
 ![Screenshot](screenshots/imports.png)
 
 All datasets will be converted to one single format, to ease the implementation.
@@ -79,20 +80,25 @@ The format will contain 2 columns: 'text' + 'label'(REAL or FAKE)
 #### Analysis of Dataset 1:
 The 'title' will be appended to the 'text' and so the 'title' column will be dropped.
 It contains 6335 rows of news from the 2016 American Presidential period.
+
 ![Screenshot](screenshots/read_dataset_1.png)
 
 Analysis:
 
 ![Screenshot](screenshots/analysis_1_dataset_1.png)
+
 ![Screenshot](screenshots/analysis_2_dataset_1.png)
 
 #### Analysis of Dataset 2:
 Same thing with the 'title' column, and the 'subject' and 'date' columns will be dropped. Finally the fake.csv and real.csv will be merged and we'll add the 'label' column and fill it with FAKE or REAL.
 It is mostly US News from the end 2017, having 44898 rows ~= x7 the size of the first dataset.
+
 ![Screenshot](screenshots/read_dataset_2.png)
 
 Analysis:
+
 ![Screenshot](screenshots/analysis_1_dataset_2.png)
+
 ![Screenshot](screenshots/analysis_2_dataset_2.png)
 
 ## Algorithms used
@@ -120,21 +126,26 @@ The execute_algorithm() function takes in a dataset, a vectorizer and an algorit
 ![Screenshot](screenshots/execute_algorithm.png)
 
 Example:
+
 ![Screenshot](screenshots/execute_algorithm_example.png)
 
 ## Prediction results
 We'll be picking the best 5 out of the 21 scores for each dataset.
 
 #### Results of Dataset 1:
+
 ![Screenshot](screenshots/results_dataset_1.png)
 
 Confusion matrix of the Passive Aggressive Classifer with the TfidfVectorizer:
+
 ![Screenshot](screenshots/confusion_matrix_best_dataset_1.png)
 
 #### Results of Dataset 2:
+
 ![Screenshot](screenshots/results_dataset_2.png)
 
 Confusion matrix of the Passive Aggressive Classifer with the TfidfVectorizer:
+
 ![Screenshot](screenshots/confusion_matrix_best_dataset_2.png)
 
 ## Conclusions
