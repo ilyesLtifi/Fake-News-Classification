@@ -6,30 +6,30 @@ The reason for that is that as you might have expected or already known, this is
 
 I believe it gives one a clearer vision/understanding of the tools used especially with Natural Language Processing.
 That there exists complex problems that still require a lot of work and cooperation between specialists from different fields in order to understand better(as will be shown below).
-
 ## [My LinkedIn](https://linkedin.com/in/mohamed-ilyes-ltifi)
 
 Enjoy!
+
 
 [Introduction](#introduction)
 
 [Tools already built](#tools-already-built)
 
-[**Sources of inspiration**](#sources-of-inspiration)
+[Sources of inspiration](#sources-of-inspiration)
 
-[**Datasets**](#datasets)
+[Datasets](#datasets)
 
-[**Data analysis and cleaning**](#data-analysis-and-cleaning)
-- [**Analysis of Dataset 1**](#analysis-of-dataset-1)
-- [**Analysis of Dataset 2**](#analysis-of-dataset-2)
+[Data analysis and cleaning](#data-analysis-and-cleaning)
+- [Analysis of Dataset 1](#analysis-of-dataset-1)
+- [Analysis of Dataset 2](#analysis-of-dataset-2)
 
-[**Algorithms used**](#algorithms-used)
+[Algorithms used](#algorithms-used)
 
-[**Prediction results**](#prediction-results)
-- [**Results of Dataset 1**](#results-of-dataset-1)
-- [**Results of Dataset 2**](#results-of-dataset-2)
+[Prediction results](#prediction-results)
+- [Results of Dataset 1](#results-of-dataset-1)
+- [Results of Dataset 2](#results-of-dataset-2)
 
-[**Conclusions**](#conclusions)
+[Conclusions](#conclusions)
 
 
 ## Introduction
