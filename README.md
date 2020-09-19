@@ -6,9 +6,9 @@ The reason for that is that as you might have expected or already known, this is
 
 I believe it gives one a clearer vision/understanding of the tools used especially with Natural Language Processing.
 That there exists complex problems that still require a lot of work and cooperation between specialists from different fields in order to understand better(as will be shown below).
-## [My LinkedIn](https://linkedin.com/in/mohamed-ilyes-ltifi)
-
 Enjoy!
+
+## [My LinkedIn](https://linkedin.com/in/mohamed-ilyes-ltifi)
 
 
 [Introduction](#introduction)
